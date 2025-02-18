@@ -101,15 +101,10 @@ mamba activate devbio-napari-env
 Now install:
 ```
 mamba install devbio-napari -c conda-forge -c pytorch
-pip install pyclesperanto
-```
-For ZARR-support, we need to run these command:
-
-```
-pip install git+https://github.com/clEsperanto/pyclesperanto.git@09e23c0f0ac1e33647cf428e0010c3e789c06738
+pip install pyclesperanto==0.16.1 
 pip install napari-ome-zarr
 ```
-If you get an error, please follow the steps in [Troubleshooting: Graphics cards drivers](#troubleshooting-graphics-cards-drivers)
+If you get an error other than a pip dependency conflict (you can ignore that one for now), please follow the steps in [Troubleshooting: Graphics cards drivers](#troubleshooting-graphics-cards-drivers)
 
 To start Napari with these tools, run this command from the command line
 
