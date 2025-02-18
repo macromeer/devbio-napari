@@ -93,17 +93,24 @@ Start by creating an environment using mamba.
 
 ```
 mamba create --name devbio-napari-env python=3.9 -c conda-forge
-mamba install devbio-napari -c conda-forge -c pytorch
-pip install pyclesperanto
 ```
-
-Afterwards, activate the environment like this:
-
+Activate the environment:
 ```
 mamba activate devbio-napari-env
 ```
+Now install:
+```
+mamba install devbio-napari -c conda-forge -c pytorch
+pip install pyclesperanto
+```
+For ZARR-support, we currently need to run this command:
 
-Afterwards, run this command from the command line
+```
+pip install git+https://github.com/clEsperanto/pyclesperanto.git@09e23c0f0ac1e33647cf428e0010c3e789c06738
+```
+If you get an error, please follow the steps in [Troubleshooting: Graphics cards drivers](#troubleshooting-graphics-cards-drivers)
+
+To start Napari with these tools, run this command from the command line
 
 ```
 naparia
@@ -151,6 +158,7 @@ Or if not:
 ```
 mamba install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
+
 
 ## Contributing
 
