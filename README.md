@@ -103,10 +103,11 @@ Now install:
 mamba install devbio-napari -c conda-forge -c pytorch
 pip install pyclesperanto
 ```
-For ZARR-support, we currently need to run this command:
+For ZARR-support, we need to run these command:
 
 ```
 pip install git+https://github.com/clEsperanto/pyclesperanto.git@09e23c0f0ac1e33647cf428e0010c3e789c06738
+pip install napari-ome-zarr
 ```
 If you get an error, please follow the steps in [Troubleshooting: Graphics cards drivers](#troubleshooting-graphics-cards-drivers)
 
